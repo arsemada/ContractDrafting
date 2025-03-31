@@ -1,0 +1,89 @@
+{
+  "components": [
+    {
+      "subtype": "date",
+      "dateLabel": "Review Start Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0l3lv5s",
+        "columns": null
+      },
+      "id": "Field_02657pu",
+      "key": "reviewStartDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Checklist Compliance Status",
+      "values": [
+        {
+          "label": "Complete",
+          "value": "Complete"
+        },
+        {
+          "label": "Incomplete",
+          "value": "Incomplete"
+        },
+        {
+          "label": "Action Required",
+          "value": "Action Required"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1tu6f9w",
+        "columns": null
+      },
+      "id": "Field_0sheb7z",
+      "key": "checklistStatus",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Missing Information/Document(s)",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0md0shi",
+        "columns": null
+      },
+      "id": "Field_0ajy0ri",
+      "key": "missingDocuments",
+      "defaultValue": "List any missing documents or information."
+    },
+    {
+      "label": "Preliminary Review Comments",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1oacf0m",
+        "columns": null
+      },
+      "id": "Field_19f2t94",
+      "key": "reviewComments",
+      "defaultValue": "Any observations or concerns from the attorney."
+    },
+    {
+      "label": "Confirm Review Completion",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1drct50",
+        "columns": null
+      },
+      "id": "Field_1k8915s",
+      "key": "reviewComplete",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0h1oxpu",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.33.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 18
+}
