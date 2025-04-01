@@ -1,0 +1,127 @@
+{
+  "components": [
+    {
+      "label": "Contract Version ID",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_073cgpv",
+        "columns": null
+      },
+      "id": "Field_1o26q87",
+      "key": "contractVersionID",
+      "validate": {
+        "required": true
+      },
+      "description": "Assign a unique identifier to each contract version (important when multiple drafts are involved)."
+    },
+    {
+      "label": "Standard Clause Suggestions",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1phovzd",
+        "columns": null
+      },
+      "id": "Field_07wcws3",
+      "key": "clauseSuggestions",
+      "description": "System-generated recommendations for commonly used clauses based on past contracts.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Drafting/Review Completion Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_03os6ne",
+        "columns": null
+      },
+      "id": "Field_0dxogn8",
+      "key": "completionDate",
+      "description": "The date when the contract draft or review is finalized by the assigned attorney.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Manager/Director Review & Approval",
+      "values": [
+        {
+          "label": "Approved",
+          "value": "Approved"
+        },
+        {
+          "label": "Rejected",
+          "value": "Rejected"
+        },
+        {
+          "label": "Revision Required",
+          "value": "Revision Required"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_03os6ne",
+        "columns": null
+      },
+      "id": "Field_0a3i0e2",
+      "key": "managerApproval",
+      "description": "Mandatory review and approval field for contracts requiring managerial or director-level attention.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Manager/Director Feedback",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_03os6ne",
+        "columns": null
+      },
+      "id": "Field_0qwt84e",
+      "key": "reviewFeedback",
+      "description": "Feedback or revisions requested by the manager or director if the contract requires changes."
+    },
+    {
+      "label": "Draft Status",
+      "values": [
+        {
+          "label": "Drafted",
+          "value": "Drafted"
+        },
+        {
+          "label": "Under Internal Review",
+          "value": "Under Internal Review"
+        },
+        {
+          "label": "Pending Manager/Director Approval",
+          "value": "Pending Manager/Director Approval"
+        },
+        {
+          "label": "Ready for Delivery",
+          "value": "Ready for Delivery"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1hsjq7x",
+        "columns": null
+      },
+      "id": "Field_0zvv5la",
+      "key": "draftStatus",
+      "description": "Indicates the current status of the contract draft.",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0meek11",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.33.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 18
+}
